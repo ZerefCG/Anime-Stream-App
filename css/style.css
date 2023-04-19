@@ -167,7 +167,7 @@ a{text-decoration: none;}
     background-color: var(--white);
     color: var(--bg-dark);
 }
-
+/* some linear gradient opacity for the image on overlay */
 .card__bg--gradient{
     background-image: 
     linear-gradient(to top, rgba(0,0,0,.9),rgba(0,0,0,.4), rgba(0,0,0,.1)),
@@ -235,7 +235,6 @@ a{text-decoration: none;}
 
 /*=============== MEDIA QUERIES ===============*/
 
-
 /* 768PX */
 
 @media screen and (min-width:768px ){
@@ -248,7 +247,6 @@ a{text-decoration: none;}
         width: calc(95% / 2);
     }
 
-   
 }
 
 /* 992px */
