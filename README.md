@@ -14,7 +14,7 @@ My first markdown readme.
 
 ## Original Design:
 
-![attachment](./design/attachment.JPG)
+![attachment](./Design/attachment.jpg)
 
 All credits to owner in Uplabs: [Figma UI Free](https://www.uplabs.com/posts/nenime-web-application-for-anime-lovers)
 
@@ -25,11 +25,11 @@ All credits to owner in Uplabs: [Figma UI Free](https://www.uplabs.com/posts/nen
 
 ## Desktop Version:
 
-![desktop](./design/desktop.PNG)
+![desktop](./Design/desktop.png)
 
 ## Tablet (992px breakpoint on Bootstrap):
 
-![tablet](./design/tablet.PNG)
+![tablet](./Design/Tablet.png)
 
 
 
