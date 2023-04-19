@@ -1,0 +1,256 @@
+/*=============== CUSTOM PROPERTIES ===============*/
+
+:root{
+    --white:#FFFFFF;
+    --gray:#807C7C;
+    --gray-light:#D9D7D7;
+    --green: #039750;
+    --light-green:#06FF71;
+    
+    /* backgrounds */
+    --light-dark:#1E1E1E;
+    --bg-dark:#000000;
+    --light-dark2:#2a2a2a;
+}
+
+/* STYLES GENERALS AND RESETS */
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-dark);
+    min-height: 100vh;
+}
+
+figure{
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+a{text-decoration: none;}
+/*=============== STYLES BOOTSTRAP ===============*/
+
+.container{
+    max-width: 1440px;
+}
+
+/* changing the focus effect on nav toggler icon*/
+.navbar-toggler:focus{
+    box-shadow: 0 0 0 0.2rem white;
+}
+
+.bg-dark{
+    background-color: var(--bg-dark);
+}
+
+/*=============== MY STYLES ===============*/
+
+/* COLORS */
+
+/* backgrounds */
+
+
+.bg-light-dark{
+    background-color:var(--light-dark) ;
+}
+
+.bg-strong-dark{
+    background-color: var(--bg-dark);
+}
+
+
+/* colors text */
+.text-color-gray{
+    color:var(--gray) ;
+}
+
+/*=============== NAVIGATION/HEADER STYLES ===============*/
+
+.logo{
+    width: 6rem;
+ }
+
+
+/* containers of navbar items, applying GAP */
+.navbar__article{
+   display: flex;
+   flex-direction: column;
+   gap: 0.4rem;
+}
+
+.navbar__h3{
+    font-size: 1.2rem;
+}
+
+.navbar__a{
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+    font-size: 1.1rem;
+    color: var(--white);
+    padding-left:0;
+}
+/* link active with a border right */
+.navbar__a--active{
+    color: var(--green);
+    border-right: 4px solid var(--green);
+}
+/* logout */
+.navbar__a--logout{
+    margin-top: auto;
+    color: var(--light-green);
+}
+
+.navbar__a:hover{
+    color: var(--green);
+}
+
+.navbar__toggler-icon{
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+/* dividers on bottom */
+.navbar__article--border-bottom{
+    --gray-opacity:rgba(128, 124, 124, 0.3);
+    border-bottom: 1px solid var(--gray-opacity);
+
+}
+
+/*=============== STYLES OF MAIN ===============*/
+/* colors of navigation series/movies */
+.nav__a--active{
+    color: var(--white);
+}
+
+.nav__a--active:hover{
+    color: var(--gray-light);
+}
+
+.nav__a{
+    color: var(--gray);
+}
+
+.nav__a:hover{
+    color: var(--gray-light);
+}
+
+/* TRENDING SECTION */
+
+.card--height{
+   height: 20rem;
+   
+}
+
+/* overlay card */
+
+.card__add--border{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.card__add--border:hover{
+    background-color: var(--white);
+    color: var(--bg-dark);
+}
+
+.card__bg--gradient{
+    background-image: 
+    linear-gradient(to top, rgba(0,0,0,.9),rgba(0,0,0,.4), rgba(0,0,0,.1)),
+    url(../img/trending.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;    
+}
+
+/* CONTINUE WATCHING */
+.carousel__img--height1{
+    height:11rem;
+}
+
+.carousel__img--height2{
+    height: 22rem;
+    object-position: top;
+}
+
+/*=============== ASIDE BAR ===============*/
+
+.aside__figure{
+    width: 3rem;
+    height: 3rem;
+}
+
+.asidenav__icon{
+    color: var(--white);
+    font-size: 1.8rem;
+}
+
+.asidenav__icon:hover{
+    color: var(--green);
+}
+
+/* STYLING ASIDE CARDS */
+.card__text-sm{
+    font-size: 1rem;
+}
+
+.aside__card--bg{
+    background-color: var(--light-dark2);
+    transition: all 0.2s ease-in-out;
+}
+
+.aside__card--bg:hover{
+    --light-dark2:#3c3c3c;
+    background-color: var(--light-dark2);
+}
+
+/* buttons */
+.button--bg{
+    color: white;
+    background-color: var(--green);
+}
+
+.button--bg:hover{
+    background-color: var(--light-green);
+}
+
+
+/*=============== MEDIA QUERIES ===============*/
+
+
+/* 768PX */
+
+@media screen and (min-width:768px ){
+    /* ASIDE CARDS SIZING */
+    .aside__card--w{
+        width: calc(95% / 3);
+    }
+
+    .aside__card--w2{
+        width: calc(95% / 2);
+    }
+}
+
+/* 992px */
+@media screen and (min-width:992px ){
+    /* ASIDE CARDS SIZING */
+    .aside__card--w{
+        width: 100%;
+    }
+    
+    .aside__card--w2{
+        width: 100%;
+    }
+}

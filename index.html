@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Gamer | Anime App</title>
+    <!-- BOOTSTRAP 5 -->
+    <link rel="stylesheet" href="./Bootstrap5.3/css/bootstrap.min.css">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet"> 
+    <!-- MY STYLES -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- OWL CAROUSEL CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!-- OWL CAROUSEL THEME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+   <div class="container">
+      <div class="row">
+        <header class="header sticky-lg-top overflowy-scroll  px-sm-2  col-12 col-lg-3 bg-light-dark">
+            <!-- NAVIGATION -->
+            
+                <nav class="navbar sticky-lg-top  overflowy-scroll  navbar-expand-lg">
+                    <div class="container-fluid ">
+                        <!-- YOU NEED A CONTAINER IF WANT DISPLAY ON COLUMN THE NAVBAR, CAN'T FLEX-COLUMN CONTAINER-FLUID -->
+                        <section class="flex-column w-100">
+    
+                         <article class="container-tools d-lg-flex ">
+                               <!-- LOGO HERE -->
+                        <a class="navbar-brand d-none d-lg-block  d-flex align-items-center mx-0 gap-2  d-lg-flex align-items-lg-center flex-wrap" href="#">
+                            <img src="./img/counter.png"  alt="counter gamer discord community" class="logo d-none d-sm-block">
+                            <h1 class="text-white my-0 d-none d-md-block">Anime</h1>
+                        </a>
+                        <!-- button toggler -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="navigation toggle">
+                            <span class="navbar__toggler-icon">
+                                <i class="fas fa-bars"></i>
+                            </span>
+                        </button>
+                        
+                         </article>
+                        <!-- container of navbar -->
+                        <div class="collapse navbar-collapse" id="navbar-content">
+    
+                        <section class="navbar-nav py-1 w-100">
+                            <!-- flex column for display nav on vertical -->
+                          <div class="flex-column w-100 ">
+                            <article class="navbar__article navbar__article--border-bottom py-4 ">
+                                <h3 class="navbar__h3 text-color-gray">MENU</h3>   
+    
+                                <a href="#" class="nav-link  navbar__a navbar__a--active">
+                                  <i class="fas fa-home"></i>
+                                   Home
+                                </a>
+                                <a href="#" class="nav-link  navbar__a">
+                                   <i class="far fa-compass"></i>
+                                    Discovery
+                                </a>
+                                <a href="#" class="nav-link  navbar__a">
+                                   <i class="fab fa-discord"></i>
+                                    Community
+                                </a>
+                             </article>
+    
+                             <article class="navbar__article navbar__article--border-bottom  py-4">
+                                <h3 class="navbar__h3 text-color-gray">LIBRARY</h3>   
+                                <a href="#" class="nav-link  navbar__a">
+                                   <i class="far fa-clock"></i>
+                                    Recent
+                                </a>
+                                <a href="#" class="nav-link  navbar__a">
+                                   <i class="far fa-folder"></i>
+                                    My collection
+                                </a>
+                                <a href="#" class="nav-link  navbar__a">
+                                   <i class="fas fa-download"></i>
+                                    Download
+                                </a>
+                             </article>
+                             
+                             <div class="navbar__article py-3">
+                                <a href="#" class="nav-link  navbar__a">
+                                   <i class="fas fa-cog"></i>
+                                    Settings
+                                </a>
+                                <a href="#" class="nav-link  navbar__a">
+                                   <i class="far fa-question-circle"></i>
+                                    Help
+                                </a>
+                                <a href="#" class="nav-link  navbar__a navbar__a--logout">
+                                   <i class="fas fa-sign-out-alt "></i>
+                                    Logout
+                                </a>
+                             </div>
+                          </div>
+                        </section>
+                        </div>
+                        </section>
+                    </div>
+                </nav>
+             
+        </header>
+        <!-- MAIN -->
+        <main class="main col-lg-6 p-3  bg-strong-dark text-white">
+       <!-- nav for series/ -->
+            <ul class="nav navbar__article--border-bottom ">
+                <li class="nav-item">
+                  <a class="nav-link ps-0 nav__a--active" aria-current="page" href="#">Series</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav__a" href="#">Movies</a>
+                </li>
+              </ul>
+              <!-- /*=============== TRENDING ===============*/ -->
+            <section class="trending my-3">
+                <h2 class="fs-4">Trending</h2>
+                <!-- CARD WITH OVERLAY AND SOME CONFIG STYLES -->
+                <div class="card text-bg-dark card--height overflow-hidden rounded-4">
+                
+                    <section class="card-img-overlay  d-flex align-items-end card__bg--gradient  ">
+
+                        <div class="row d-flex w-100  align-items-center pb-0  px-3">
+                            <article class="col-12 col-md-6 my-2 ">
+                                <h2 class="card-title fs-2">Your Lie in April</h2>
+                                <span >Adventure, Action, Fantasy</span>
+                            </article>
+                            <article class="col-12 col-md-6 my-2 d-flex align-items-center justify-content-md-end gap-4">
+                                <a href="#" class="btn button--bg fs-5 fw-bold rounded-4">
+                                    Watch Now
+                                </a>
+                                <a href="#" class="p-3 fw-medium card__add--border">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </article>
+                        </div>
+                        
+                    </section>
+                </div>
+            </section>
+            
+            <section class="continue-watching">
+                <h2 class="fs-4">Continue Watching</h2>
+                <!-- CARD WITH OVERLAY AND SOME CONFIG STYLES -->
+                 <div class="container gx-0">
+                    <section class="owl-carousel ">
+                        <article class="item rounded-3 overflow-hidden">
+                            <img src="./img/continue-watching1.jpg" class="carousel__img--height1" alt="">
+                        </article>
+                        <article class="item rounded-3 overflow-hidden" >
+                            <img src="./img/continue-watching2.jpg" class="carousel__img--height1" alt="">
+                        </article>
+                        <article class="item rounded-3 overflow-hidden" >
+                            <img src="./img/continue-watching3.png" class="carousel__img--height1" alt="">
+                        </article>
+                    </section>
+                 </div>   
+                   
+                
+            </section>
+
+            <section class="continue-watching mt-3">
+                <h2 class="fs-4">For you</h2>
+                <!-- CARD WITH OVERLAY AND SOME CONFIG STYLES -->
+                 <div class="container gx-0">
+                    <section class="owl-carousel ">
+                        <article class="item gx-5 rounded-1 overflow-hidden">
+                            <img src="./img/for-you1.jpg" class="carousel__img--height2" alt="">
+                        </article>
+                        <article class="item rounded-1 overflow-hidden" >
+                            <img src="./img/for-you2.jpg" class="carousel__img--height2" alt="">
+                        </article>
+                        <article class="item rounded-1 overflow-hidden" >
+                            <img src="./img/for-you3.jpg" class="carousel__img--height2" alt="">
+                        </article>
+                    </section>
+                 </div>   
+                   
+                
+            </section>
+        </main>
+ 
+
+        <!-- ASIDE ITEMS AND PROFILE -->
+        <!-- /*=============== DISPLAY ON LG THIS SIDE BAR ===============*/ -->
+        <aside class="aside  order-2 py-3 col-12 col-lg-3  bg-light-dark text-white">
+            <div class="container">        
+                        <div class="flex-column">
+                            <!-- NAVBAR ON SIDE BAR, PROFILE AND NOTIFICATION -->
+                            <nav class="navbar-nav flex-row d-none d-lg-flex justify-content-end gap-4">
+                                <a class="nav-link asidenav__icon " aria-current="page" href="#">
+                                    <i class="far fa-bell "></i>
+                                </a>
+                                <a class="nav-link" href="#">
+                                    <figure class="rounded-circle aside__figure overflow-hidden">
+                                        <img src="./img/profile-photo.jpg" class="" alt="kaori">
+                                    </figure>
+                                </a>
+                            </nav>
+                              <!-- SECTION TOP WEEK -->
+                            <section class="top-week my-3 text-white d-flex flex-column flex-md-row flex-lg-column justify-content-between flex-wrap">
+                                <h2 class="mb-4 w-100">Top this week</h2>
+    
+                                <a href="#" class="aside__card--w ">
+                                    <article class=" h-100 aside__card--bg p-2 card border-0 text-white mb-3" style="">
+                                        <section class="row g-0">
+                                           <figure class="col-lg-4 ">
+                                                <img src="./img/top-week.jpg" class="h-100 rounded-start" alt="...">
+                                          </figure>
+                                          <div class="col-md-8">
+                                               <section class="card-body d-flex flex-column gap-2 justify-content-evenly h-100">
+                                                  <h5 class="card-title">Your Lie in April</h5>
+                                                  <p class="card-text mb-0 card__text-sm">Drama, Romance</p>
+                                                  <p class="card-text  card__text-sm">
+                                                       ⭐ 9.8
+                                                  </p>
+                                               </section>
+                                          </div>
+                                        </section>
+                                     </article>
+                                </a>
+    
+                                <a href="#" class="aside__card--w ">
+                                    <article class=" h-100 aside__card--bg p-2 card border-0 text-white mb-3" style="">
+                                        <section class="row g-0">
+                                           <figure class="col-lg-4 ">
+                                                <img src="./img/top-week2.jpg" class="h-100 rounded-start" alt="Komi Can't Communicate">
+                                          </figure>
+                                          <div class="col-md-8">
+                                               <section class="card-body d-flex flex-column gap-2 justify-content-evenly h-100">
+                                                  <h5 class="card-title">Komi Can't Communicate</h5>
+                                                  <p class="card-text mb-0 card__text-sm"> Drama, Romance, Slice of Life</p>
+                                                  <p class="card-text  card__text-sm">
+                                                       ⭐ 9.5
+                                                  </p>
+                                               </section>
+                                          </div>
+                                        </section>
+                                     </article>
+                                </a>
+    
+                                <a href="#" class="aside__card--w ">
+                                    <article class="h-100 aside__card--bg p-2 card border-0 text-white mb-3" style="">
+                                        <section class="row g-0">
+                                           <figure class="col-lg-4 ">
+                                                <img src="./img/top-week3.jpg" class="h-100 rounded-start" alt="Danmachi">
+                                          </figure>
+                                          <div class="col-md-8">
+                                               <section class="card-body d-flex flex-column gap-2 justify-content-evenly h-100">
+                                                  <h5 class="card-title">Danmachi Season 3</h5>
+                                                  <p class="card-text mb-0 card__text-sm">Adventure Action, Drama, Fantasy </p>
+                                                  <p class="card-text  card__text-sm">
+                                                       ⭐ 9.4
+                                                  </p>
+                                               </section>
+                                          </div>
+                                        </section>
+                                     </article>
+                                </a>
+    
+                                <a href="#" class="btn button--bg btn-lg fw-bold fs-5 mx-auto rounded-5 my-2">See more</a>
+                             </section>
+                           <!-- SECTION MOVIES -->
+                           <section class="top-movies my-3 text-white d-flex flex-wrap justify-content-between gap-3">
+                            <h2 class="mb-4 w-100">Top Movies</h2>
+    
+                            <a href="#" class="aside__card--w2">
+                                <article class="aside__card--bg p-2 card border-0 text-white mb-3" style="">
+                                    <section class="row g-0">
+                                       <figure class="col-lg-4 ">
+                                            <img src="./img/top-movies1.jpg" class="h-100 rounded-start" alt="...">
+                                      </figure>
+                                      <div class="col-md-8">
+                                           <section class="card-body d-flex flex-column gap-2 justify-content-evenly h-100">
+                                              <h5 class="card-title">Tenki no Ko</h5>
+                                              <p class="card-text mb-0 card__text-sm">Drama, Romance</p>
+                                              <p class="card-text  card__text-sm">
+                                                   ⭐ 9.8
+                                              </p>
+                                         </section>
+                                      </div>
+                                    </section>
+                                 </article>
+                            </a>
+    
+                            <a href="#" class="aside__card--w2">
+
+                                <article class="aside__card--bg p-2 card border-0 text-white mb-3" >
+                                    <section class="h-100 row g-0">
+                                       <figure class="col-lg-4 ">
+                                            <img src="./img/top-movies2.jpg" class="h-100 rounded-start" alt="Jujutsu Kaisen">
+                                      </figure>
+                                      <div class="col-md-8">
+                                           <section class="card-body d-flex flex-column gap-2 justify-content-evenly h-100">
+                                              <h5 class="card-title">Jujutsu Kaisen 0</h5>
+                                              <p class="card-text mb-0 card__text-sm">Action, Fantasy</p>
+                                              <p class="card-text  card__text-sm">
+                                                   ⭐ 9.5
+                                              </p>
+                                           </section>
+                                      </div>
+                                    </section>
+                                 </article>
+                            </a>
+
+                           
+    
+                         
+                           </section>
+    
+                           
+                        </div>
+                      
+                    
+                  </nav>
+            </div>
+        </aside>
+     </div>
+   </div>
+   
+   <!-- BOOTSTRAP -->
+   <script src="./Bootstrap5.3/js/bootstrap.bundle.min.js"></script>
+   <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/5526ecbb05.js" crossorigin="anonymous"></script>
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- SCRIPT FOR CAROUSEL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- OWL CAROUSEL -->
+    <script src="./js/app.js"></script>
+</body>
+</html>
