@@ -29,7 +29,7 @@ All credits to owner in Uplabs: [Figma UI Free](https://www.uplabs.com/posts/nen
 
 ## Tablet (992px breakpoint on Bootstrap):
 
-![tablet](./Design/Tablet.png)
+![tablet](./Design/tablet.png)
 
 
 
